@@ -17,7 +17,7 @@ body {
   position: relative;
 }
 
-/* Elements */
+
 .element {
   position: absolute;
   background: #4f46e5;
@@ -36,7 +36,7 @@ body {
   outline: 2px solid #4f46e5;
 }
 
-/* Resize handle */
+
 .handle {
   width: 10px;
   height: 10px;
@@ -47,7 +47,7 @@ body {
   cursor: nwse-resize;
 }
 
-/* Toolbar */
+
 .toolbar {
   position: fixed;
   bottom: 20px;
