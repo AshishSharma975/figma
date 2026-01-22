@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Design Tool</title>
+
+  <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.8.0/fonts/remixicon.css"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="css/dashboard.css" />
+</head>
+<body>
+
+<div class="main">
+
+  <aside class="sidebar">
+
+   
+    <div class="profile">
+      <div class="avatar">A</div>
+      <span class="name">Ashish Sharma</span>
+      <i class="ri-arrow-down-s-line"></i>
+      <i class="ri-notification-3-line bell"></i>
+    </div>
+
+    
+    <div class="search">
+      <i class="ri-search-line"></i>
+      <input type="text" placeholder="Search" />
+    </div>
+
+    <ul class="menu">
+        <li> <i class="ri-history-line"></i> Recent</li>
+        <li><i class="ri-community-line"></i> Community</li>
+    </ul>
+
+    <div class="divider"></div>
+
+    <div class="workspace">
+        <div class="work">
+             <div class="avatar1">A</div>
+        <p class="title">Ashish Sharma's team <span class="tag">Free</span></p>
+        </div>
+        <ul>
+              <li><i class="ri-draft-line"></i> Drafts</li>
+        <li><i class="ri-file-line"></i> All projects</li>
+        <li><i class="ri-database-line"></i>Resources</li>
+        <li><i class="ri-delete-bin-line"></i> Trash</li>
+        </ul>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="upgrade-box">
+        <i class="ri-arrow-up-circle-line"></i>
+         <p>Ready to go beyond this free plan?</p>
+      <button>View plans</button>
+    </div>
+
+      <div class="starred">
+      <p class="title">Starred</p>
+      <div><i class="ri-folder-line"></i> Team project</div>
+    </div>
+  </aside>
+
+<div class="right-side">
+  <!-- Top Bar -->
+  <div class="topbar">
+    <h2>Recent</h2>
+
+    <div class="btns">
+      <button class="capsule active">Design</button>
+      <button class="capsule">FigJam</button>
+      <button class="capsule">Slides</button>
+      <button class="capsule">Buzz</button>
+      <button class="capsule">Site</button>
+      <button class="capsule">Make</button>
+    </div>
+  </div>
+
+  <!-- Content -->
+  <div class="content">
+    <button id="newProjectBtn" class="new-project-btn">
+  + New Project
+</button>
+
+
+    <!-- Recommended -->
+    <h3 class="section-title">Recommended resources</h3>
+
+    <div class="card-row">
+      <div class="card large">
+        <p>Mobile Strategy Review</p>
+      </div>
+
+      <div class="card large purple">
+        <p>User Journey Map</p>
+      </div>
+
+      <div class="card large green">
+        <p>Reverse Brainstorming</p>
+      </div>
+
+      <div class="card large pink">
+        <p>Our Blooms</p>
+      </div>
+    </div>
+
+    <!-- Recent Files -->
+    <h3 class="section-title">Recently viewed</h3>
+
+    <div class="grid">
+      <div class="file-card">Zajno</div>
+      <div class="file-card">Untitled</div>
+      <div class="file-card">UI Design</div>
+      <div class="file-card">Login Page</div>
+    </div>
+
+  </div>
+</div>
+
+  
+
+</div>
+<script src="js/dashboard.js"></script>
+
+
+</body>
+</html>
