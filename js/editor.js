@@ -8,7 +8,7 @@ let isDrawing = false;
 let startX = 0;
 let startY = 0;
 
-/* TOOL SELECT */
+
 tools.forEach(btn => {
   btn.onclick = () => {
     tools.forEach(b => b.classList.remove("active"));
@@ -17,9 +17,7 @@ tools.forEach(btn => {
   };
 });
 
-/* =======================
-   DRAW RECTANGLE
-======================= */
+
 canvas.addEventListener("mousedown", (e) => {
   if (currentTool !== "rect") return;
 
@@ -62,9 +60,7 @@ canvas.addEventListener("mousedown", (e) => {
   document.addEventListener("mouseup", stop);
 });
 
-/* =======================
-   TEXT TOOL
-======================= */
+
 canvas.addEventListener("click", (e) => {
   if (currentTool !== "text") return;
 
@@ -81,18 +77,14 @@ canvas.addEventListener("click", (e) => {
   save();
 });
 
-/* =======================
-   SELECT
-======================= */
+
 function select(el) {
   document.querySelectorAll(".element").forEach(e => e.classList.remove("selected"));
   el.classList.add("selected");
   selected = el;
 }
 
-/* =======================
-   DRAG
-======================= */
+
 function makeDraggable(el) {
   el.onmousedown = (e) => {
     if (currentTool !== "select") return;
@@ -119,9 +111,7 @@ function makeDraggable(el) {
   };
 }
 
-/* =======================
-   RESIZE
-======================= */
+/
 function addResize(el) {
   const handle = document.createElement("div");
   handle.className = "handle";
@@ -146,16 +136,12 @@ function addResize(el) {
   };
 }
 
-/* =======================
-   COLOR
-======================= */
+
 colorPicker.oninput = () => {
   if (selected) selected.style.background = colorPicker.value;
 };
 
-/* =======================
-   DELETE
-======================= */
+
 document.addEventListener("keydown", (e) => {
   if (e.key === "Delete" && selected) {
     selected.remove();
@@ -164,9 +150,7 @@ document.addEventListener("keydown", (e) => {
   }
 });
 
-/* =======================
-   SAVE / LOAD
-======================= */
+
 function save() {
   const data = [...document.querySelectorAll(".element")].map(el => ({
     x: el.style.left,
